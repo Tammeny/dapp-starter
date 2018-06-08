@@ -3,7 +3,7 @@
 > Base on nebulas，help you develop block chain apps quickly.
 
 
-## Install && Package
+## Install
 
  - Clone or download this repository
  - Enter your local directory, and install dependencies:
