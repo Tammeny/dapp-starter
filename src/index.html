@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>不良电话曝光台</title>
+  <meta name="description" content="用户可以提交骚扰、诈骗等不良电话，并备注详情，让不良电话上链，让更多网友避免可能的上当受骗。">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.3.7/lib/theme-chalk/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.2.6/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/element-ui@2.3.7/lib/index.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+  <script src="../lib/nebulas.js"></script>
+  <script src="../lib/nebPay.js"></script>
+  <script>
+    var nebulas = require("nebulas"),
+      NebPay = require("nebpay"),
+      HttpRequest = nebulas.HttpRequest,
+      Neb = nebulas.Neb,
+      Account = nebulas.Account,
+      Transaction = nebulas.Transaction,
+      Unit = nebulas.Unit,
+      Utils = nebulas.Utils;
+
+    var config = {
+      name: "mainnet",
+      contractAddress: "n1fofXC3TNwfreKdnsj9XXypGpSgJ2qBFcv",
+      host: "https://mainnet.nebulas.io",
+      payApi: "https://pay.nebulas.io/api/mainnet/pay"
+      // name: "testnet",
+      // contractAddress: "n1z4Eo6cNzt7xyyLWn7bG9HMKTkZtwvvQCt",
+      // host: "https://testnet.nebulas.io",
+      // payApi: "https://pay.nebulas.io/api/pay"
+    }
+
+    var neb = new Neb();
+    neb.setRequest(new HttpRequest(config.host));
+
+    var nebApi = neb.api;
+    var nebPay = new NebPay();
+    var nebState;
+    nebApi.getNebState().then(function (state) {
+      nebState = state;
+    })
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2d64527ca3f851773640d2cc1480bb2d";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</body>
+
+</html>
