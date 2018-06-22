@@ -1,14 +1,14 @@
 {
-  "name": "element-starter",
-  "description": "A Vue.js project",
-  "author": "yi.shyang@ele.me",
+  "name": "dapp-starter",
+  "description": "A DAPP starter kit base on nebulas，help you develop block chain apps quickly.",
+  "author": "tammeny@qq.com",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --env.dev",
     "build": "rimraf dist && webpack -p --progress --hide-modules"
   },
   "dependencies": {
-    "element-ui": "^2.3.4",
+    "muse-ui": "^3.0.0-beta.2",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },

@@ -1,4 +1,4 @@
-# DAPP Scaffold
+# DAPP Starter Kit
 
 > Base on nebulas，help you develop block chain apps quickly.
 
