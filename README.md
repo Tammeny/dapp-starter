@@ -7,25 +7,30 @@
 3. 用户/管理员可删除自己发布的数据；
 4. 管理员可新增与编辑分类。
 
-## 开始
+## 安装
 
- - Clone or download this repository
- - Enter your local directory, and install dependencies:
+ - 克隆项目
+ - 进入项目目录，并安装依赖
 
 ``` bash
 npm install
 ```
 
-## Develop
+## 本地开发
 
 ``` bash
-# serve with hot reload at localhost:8011
+# 打开localhost:8011即可访问
 npm run dev
 ```
 
-## Build
+## 构建
 
 ``` bash
-# build for production with minification
 npm run build
 ```
+
+## 合约
+路径 `/contract/card.js`，此合约文件是整个dapp项目的核心。
+
+## 成为星云链开发者
+[https://incentive.nebulas.io/cn/signup.html?invite=p8hJs](https://incentive.nebulas.io/cn/signup.html?invite=p8hJs)
